@@ -1,0 +1,190 @@
+/*Specifics*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+nav {
+  max-height: 500px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+ul {
+  padding: 0;
+}
+
+header {
+  display: grid;
+  align-items: center;
+  justify-items: right;
+  background-color: #0c0e12;
+  height: 70px;
+}
+
+ul#menu li {
+  display: inline;
+  padding: 0.3rem;
+}
+
+ul#menu li a {
+  color: #8e8a89;
+  font-size: 10px;
+}
+
+h2,
+h3,
+.white-color {
+  color: #ffffff;
+}
+
+p,
+.grey-color {
+  color: #8e8a89;
+}
+
+footer {
+  background-color: #222022;
+}
+
+.playlist li {
+  padding: 0.7rem 0 0 0;
+}
+
+button {
+  background-color: #0c0e12;
+  border-radius: 1rem;
+  border: 1px solid #ffffff;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}
+/*Grids*/
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.grid-footer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.two-column-grid-nav {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.two-column-grid-icon-footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.7rem;
+}
+.three-columns-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+/*Classes*/
+
+.frame-logo {
+  width: 80px;
+}
+
+.frame-nav {
+  width: 20px;
+}
+
+.frame-nav-menu2 {
+  width: 25px;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.padding-bottom {
+  padding-bottom: 0.4rem;
+}
+
+.padding-top {
+  padding-top: 1rem;
+}
+.padding-nav {
+  padding: 0.7rem 0 0.5rem 0;
+}
+
+.nav-menu1,
+.nav-menu2,
+.nav-menu3 {
+  padding-top: 1.5rem;
+}
+
+.center {
+  display: grid;
+  justify-items: center;
+}
+
+.sml-icon {
+  width: 10px;
+}
+
+.mdn-icon {
+  width: 30px;
+}
+
+.frame-img-footer {
+  width: 45px;
+}
+.frame-icon-footer {
+  width: 15px;
+}
+
+.text-nav {
+  display: grid;
+  align-items: center;
+}
+.font-sml {
+  font-size: 12px;
+}
+
+.font-xsml {
+  font-size: 10px;
+}
+
+.font-mdn {
+  font-size: 14px;
+}
+
+.border-top {
+  border-top: 1px solid #8e8a89;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-black-2 {
+  background-color: #13151d;
+}
+
+.font-button {
+  font-weight: lighter;
+  font-size: 10px;
+}
