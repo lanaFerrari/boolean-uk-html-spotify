@@ -9,7 +9,7 @@ body {
   font-family: sans-serif;
 }
 nav {
-  max-height: 500px;
+  height: 1fr;
 }
 
 a {
@@ -34,7 +34,11 @@ header {
   align-items: center;
   justify-items: right;
   background-color: #0c0e12;
-  height: 70px;
+  height: 80px;
+}
+
+nav {
+  height: 88vh;
 }
 
 ul#menu li {
@@ -43,7 +47,7 @@ ul#menu li {
 }
 
 ul#menu li a {
-  color: #8e8a89;
+  color: #f3f3f3;
   font-size: 10px;
 }
 
@@ -60,6 +64,7 @@ p,
 
 footer {
   background-color: #222022;
+  max-height: 80px;
 }
 
 .playlist li {
@@ -72,6 +77,7 @@ button {
   border: 1px solid #ffffff;
   padding: 0.5rem 2rem 0.5rem 2rem;
 }
+
 /*Grids*/
 
 .main-grid {
@@ -100,7 +106,28 @@ button {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
+  gap: 0.3rem;
 }
+
+.grid-auto {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+.bar {
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+  grid-gap: 10px;
+}
+
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.6rem;
+}
+
 /*Classes*/
 
 .frame-logo {
@@ -115,6 +142,19 @@ button {
   width: 25px;
 }
 
+.framebg-icon {
+  width: 17px;
+  display: grid;
+  align-items: center;
+}
+
+.frameSpecial-icon {
+  width: 30px;
+}
+
+.frame-section {
+  width: 100px;
+}
 .padding {
   padding: 1rem;
 }
@@ -124,10 +164,10 @@ button {
 }
 
 .padding-top {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
 .padding-nav {
-  padding: 0.7rem 0 0.5rem 0;
+  padding: 0.7rem 0.5rem 0.5rem 0.1rem;
 }
 
 .nav-menu1,
@@ -160,11 +200,13 @@ button {
   display: grid;
   align-items: center;
 }
-.font-sml {
+.font-sml,
+.description-section h3 {
   font-size: 12px;
 }
 
-.font-xsml {
+.font-xsml,
+.description-section p {
   font-size: 10px;
 }
 
@@ -187,4 +229,74 @@ button {
 .font-button {
   font-weight: lighter;
   font-size: 10px;
+}
+
+.progress-bar {
+  display: grid;
+  align-content: center;
+}
+
+.progress-wrapper {
+  height: 5px;
+  width: 400px;
+  border: solid 1px black;
+  border-radius: 5px;
+  background-color: #535353;
+  overflow: hidden;
+}
+
+.progress-wrapper-2 {
+  height: 5px;
+  width: 50px;
+  border: solid 1px black;
+  border-radius: 5px;
+  background-color: #535353;
+  overflow: hidden;
+}
+
+.center-2 {
+  display: grid;
+  align-items: center;
+}
+
+.padding-sections-main {
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+.padding-sections-main h2 {
+  padding: 0 0 1rem 0;
+}
+
+.scroll-section {
+  height: calc(100vh - 160px);
+
+  /* overflow: scroll; */
+  overflow-y: scroll;
+}
+
+.scroll-section-sml {
+  height: 28vh;
+  overflow-y: scroll;
+}
+
+/* Scroll customisation, find it here: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
