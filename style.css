@@ -80,6 +80,11 @@ button {
 
 /*Grids*/
 
+.flex-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 9rem));
+  gap: 0.6rem;
+}
 .main-grid {
   display: grid;
   grid-template-columns: 1fr 5fr;
